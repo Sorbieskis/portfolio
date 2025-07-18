@@ -1,0 +1,21 @@
+# Node/Vite
+node_modules/
+dist/
+.vite/
+
+# System
+.DS_Store
+*.log
+
+# Vite/Build
+build/
+
+# VS Code
+.vscode/
+
+# OS
+Thumbs.db
+
+# Misc
+.env
+*.local
