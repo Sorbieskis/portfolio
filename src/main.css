@@ -63,7 +63,7 @@ body {
 .cicero-bust {
   cursor: pointer;
   display: block;
-  width: 160px;
+  width: 144px;
   height: auto;
   margin: 0 auto;
   transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
@@ -90,8 +90,8 @@ body {
     gap: var(--space-64);
   }
   .cicero-bust {
-    width: 80%;
-    max-width: 224px;
+    width: 72%;
+    max-width: 202px;
     margin: 0;
   }
   .intro-text {
