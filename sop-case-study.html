@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Docs-as-Code System Architecture - Deimonas Suchanka</title>
-  <meta name="description" content="Architecture and implementation of a modern 'docs-as-code' workflow to replace a chaotic system, creating a foundation for future automation.">
+  <title>Platform: Project Unidoc - Deimonas Suchanka</title>
+  <meta name="description" content="Case study on the architecture of Project Unidoc, an enterprise documentation platform for generating as-built manuals for highly configurable equipment.">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,15 +18,15 @@
 
     <header class="main-header">
       <div class="case-study-header">
-        <h1 class="case-study-title">System: "Docs-as-Code" Technical Documentation Workflow</h1>
+        <h1 class="case-study-title">Platform: Project Unidoc - Enterprise Documentation System</h1>
         <h2 class="case-study-subtitle">Systems Engineer | Deimonas Suchanka</h2>
         
         <div class="outcome-assertion">
           <p class="outcome-stat">
-            <strong class="text-gold">Foundation for Automated Documentation</strong>
+            <strong class="text-gold">Architecting an Enterprise Documentation Platform</strong>
           </p>
           <p class="outcome-summary">
-            Independently architected a modern documentation system from the ground up, replacing a chaotic file-based process with a version-controlled, single-source-of-truth workflow.
+            Architected and led the development of a modern platform to replace a chaotic file-based process, enabling automated, as-built manual generation.
           </p>
         </div>
       </div>
@@ -36,7 +36,10 @@
       <section>
         <h2 class="section-header">the problem</h2>
         <p class="project-description">
-          The existing process for creating technical manuals was non-existent. It consisted of scattered Word documents on a shared drive with no version control, inconsistent formatting, and outdated or incomplete information. This led to customer complaints and created significant internal inefficiency.
+          The existing documentation process, based on scattered Word files, was a high-risk liability that created inefficiency and quality issues.
+        </p>
+        <p class="project-description">
+          Crucially, this ad-hoc process could not scale to support the company's strategic shift towards highly configurable products, creating a critical bottleneck for delivering accurate, machine-specific documentation to customers.
         </p>
       </section>
 
@@ -44,20 +47,20 @@
         <h2 class="section-header">methodology</h2>
         <ol class="project-list">
           <li>
-            <strong>1. Research & Prototyping</strong>
-            <p class="description">Initially researched and attempted to implement a complex pipeline to integrate with legacy `.docx` workflows, but found it to be unmanageable.</p>
+            <strong>1. Prototyping & Validation (V1)</strong>
+            <p class="description">Built a functional MVP to prove the value of a "docs-as-code" approach and validate the core technical architecture (Git, Python, LaTeX), achieving initial stakeholder buy-in.</p>
           </li>
           <li>
-            <strong>2. Strategic Pivot</strong>
-            <p class="description">Pivoted to a more robust and pragmatic "docs-as-code" approach, leveraging proven tools to build a new system from first principles.</p>
+            <strong>2. Stakeholder Buy-In & Strategic Alignment</strong>
+            <p class="description">Successfully presented the V1 prototype to senior management, securing the approval and resources needed to architect a full-scale enterprise platform aligned with company goals (ISO 9001, Product Modularity).</p>
           </li>
           <li>
-            <strong>3. System Development</strong>
-            <p class="description">Established a complete development environment using VSCode, created a comprehensive style guide, and built out reusable templates through iterative experimentation.</p>
+            <strong>3. Enterprise Architecture (V2)</strong>
+            <p class="description">Designed the full V2 platform from first principles, focusing on a "Docs-as-BOM" (Bill of Materials) model to solve the complex product configurability challenge.</p>
           </li>
           <li>
-            <strong>4. Implementation & Delivery</strong>
-            <p class="description">Authored new, high-quality technical manuals using the system, including taking ownership of custom technical illustrations by editing P&ID schematics in progeCAD.</p>
+            <strong>4. Full-Cycle Implementation</strong>
+            <p class="description">Currently leading the V2 development, from back-end pipeline configuration and CI/CD automation to the front-end CMS user experience design.</p>
           </li>
         </ol>
       </section>
@@ -66,20 +69,16 @@
         <h2 class="section-header">solution architecture</h2>
         <ul class="project-list">
           <li>
-            <strong>Version Control as Foundation</strong>
-            <p class="description">Used Git for rigorous version control, providing a complete history of changes and establishing a single source of truth for all documentation.</p>
+            <strong>Modular Content Model</strong>
+            <p class="description">A version-controlled library of reusable "Lego block" components, assembled via a "Docs-as-BOM" YAML file that ensures as-built accuracy and links content directly to P&ID revisions for traceability.</p>
           </li>
           <li>
-            <strong>Dual-Output Workflow</strong>
-            <p class="description">Architected two parallel pipelines: a LaTeX-based workflow for superior typesetting in physical, print-ready manuals, and a Markdown-based workflow for responsive, searchable static websites (using MkDocs).</p>
+            <strong>Visual Assembly Workbench</strong>
+            <p class="description">A custom-configured CMS (Decap) providing an intuitive, "Word-like" single-pane experience for non-technical engineers to visually search, select, and assemble manual components.</p>
           </li>
-          <li>
-            <strong>Forward-Thinking Distribution</strong>
-            <p class="description">Developed a self-contained `.exe` of the software manual using Tauri 2.0 as an interim solution for clients, with a long-term plan to integrate the documentation directly into the control software (CRS10).</p>
-          </li>
-          <li>
-            <strong>Foundation for Automation</strong>
-            <p class="description">Designed the entire system with a "Lego block" philosophy, creating a modular foundation that will enable the future automatic generation of machine-specific manuals based on a given configuration.</p>
+           <li>
+            <strong>Automated Publishing Pipelines</strong>
+            <p class="description">A CI/CD system built with Python and GitHub Actions that automatically generates both professional, print-ready PDFs (via LaTeX) and modern static websites (via MkDocs) from a single source of truth.</p>
           </li>
         </ul>
       </section>
@@ -90,33 +89,33 @@
           <tbody>
             <tr>
               <td class="deliverable-title">
-                Documentation Workflow
+                Scalable Content Platform
               </td>
               <td class="deliverable-description">
-                A complete, version-controlled system for generating both print (LaTeX) and web (Markdown/MkDocs) documentation from a structured process.
+                A version-controlled system for managing a library of modular content components across all standard and special product lines.
               </td>
             </tr>
             <tr>
               <td class="deliverable-title">
-                Style Guide & Templates
+                Visual Assembly Workbench
               </td>
               <td class="deliverable-description">
-                A comprehensive style guide and a set of boilerplate templates to ensure all future documentation is consistent, professional, and high-quality.
+                A CMS interface configured to enable non-technical users to assemble manuals via a "Word-like" visual experience, eliminating the need for developer intervention.
               </td>
             </tr>
             <tr>
               <td class="deliverable-title">
-                Software Manual Prototype
+                Automated Publishing Pipelines
               </td>
               <td class="deliverable-description">
-                A fully functional static website and a self-contained `.exe` (via Tauri 2.0) for the CRS10 software manual, approved by the lead developer and automation lead.
+                Dual CI/CD pipelines that generate professional print (PDF) and web outputs from a single, structured source, with integrated quality gates.
               </td>
             </tr>
           </tbody>
         </table>
 
         <p class="text-sm text-description mt-8">
-          *Note: The system architecture and templates are proprietary and are available to be discussed in detail during an interview.
+          *Note: The system architecture and proprietary details are available to be discussed in depth during an interview.
         </p>
       </section>
     </main>
