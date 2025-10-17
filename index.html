@@ -6,7 +6,7 @@
   <title>Deimonas Suchanka - Systems & Process Engineer</title>
   <link rel="stylesheet" href="/src/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
- <! <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="/portfolio/favicon-32x32.png">
 </head>
@@ -16,17 +16,22 @@
 
     <header class="main-header">
       <div class="header-grid">
+        
+        <!-- CONTAINER 1: BUST IMAGE -->
         <div class="bust-container">
           <img src="/src/assets/images/cicero.png" alt="Cicero bust - representing systematic argumentation and clarity of thought" class="cicero-bust">
+        </div> <!-- <<< THIS DIV WAS MISSING ITS CLOSING TAG HERE -->
         
+        <!-- CONTAINER 2: TEXT CONTENT -->
         <div class="text-container">
           <h1 class="portfolio-name">Damon Suchanka</h1>
           <h2 class="portfolio-title-location">Systems & Process Engineer | The Hague, Netherlands</h2>
           <p class="intro-text">
-          I am a systems thinker who bridges the gap between hands-on execution and high-level analysis. I apply first-principles reasoning to diagnose complex systems, architect scalable processes, and deliver robust, data-driven engineering solutions.            <br><br>
+          I am a systems thinker who bridges the gap between hands-on execution and high-level analysis. I apply first-principles reasoning to diagnose complex systems, architect scalable processes, and deliver robust, data-driven engineering solutions.
           </p>
         </div>
-      </div>
+
+      </div> <!-- <<< THE EXTRA </div> WAS HERE, INCORRECTLY WRAPPING THE TEXT CONTAINER -->
     </header>
 
     <main>
@@ -93,4 +98,3 @@
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
-
