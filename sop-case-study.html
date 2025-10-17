@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Platform: Project Unidoc - Deimonas Suchanka</title>
-  <meta name="description" content="Case study on the architecture of Project Unidoc, an enterprise documentation platform for generating as-built manuals for highly configurable equipment.">
+  <title>Platform: Project Unidoc - Damon Suchanka</title>
+  <meta name="description" content="Case study on the architecture of Project Unidoc, an enterprise documentation platform built with Django and Wagtail for generating as-built technical manuals.">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,15 +18,15 @@
 
     <header class="main-header">
       <div class="case-study-header">
-        <h1 class="case-study-title">Platform: Project Unidoc - Enterprise Documentation System</h1>
+        <h1 class="case-study-title">Platform: Project Unidoc - Enterprise Documentation Platform</h1>
         <h2 class="case-study-subtitle">Systems Engineer | Deimonas Suchanka</h2>
         
         <div class="outcome-assertion">
           <p class="outcome-stat">
-            <strong class="text-gold">Architecting an Enterprise Documentation Platform</strong>
+            <strong class="text-gold">Production-Deployed Django/Wagtail CMS Platform</strong>
           </p>
           <p class="outcome-summary">
-            Architected and led the development of a modern platform to replace a chaotic file-based process, enabling automated, as-built manual generation.
+            Identified a critical business bottleneck, proposed a solution to leadership, and independently architected and delivered a complete system now in production.
           </p>
         </div>
       </div>
@@ -36,79 +36,77 @@
       <section>
         <h2 class="section-header">the problem</h2>
         <p class="project-description">
-          The existing documentation process, based on scattered Word files, was a high-risk liability that created inefficiency and quality issues.
+          The company's strategic shift toward highly configurable products created a documentation scalability crisis. The existing ad-hoc process, based on scattered Word files, was a high-risk liability.
         </p>
         <p class="project-description">
-          Crucially, this ad-hoc process could not scale to support the company's strategic shift towards highly configurable products, creating a critical bottleneck for delivering accurate, machine-specific documentation to customers.
+          This process could not support structured technical documentation requirements, which impacted delivery schedules and created a significant operational risk.
         </p>
       </section>
 
       <section>
-        <h2 class="section-header">methodology</h2>
-        <ol class="project-list">
-          <li>
-            <strong>1. Prototyping & Validation (V1)</strong>
-            <p class="description">Built a functional MVP to prove the value of a "docs-as-code" approach and validate the core technical architecture (Git, Python, LaTeX), achieving initial stakeholder buy-in.</p>
-          </li>
-          <li>
-            <strong>2. Stakeholder Buy-In & Strategic Alignment</strong>
-            <p class="description">Successfully presented the V1 prototype to senior management, securing the approval and resources needed to architect a full-scale enterprise platform aligned with company goals (ISO 9001, Product Modularity).</p>
-          </li>
-          <li>
-            <strong>3. Enterprise Architecture (V2)</strong>
-            <p class="description">Designed the full V2 platform from first principles, focusing on a "Docs-as-BOM" (Bill of Materials) model to solve the complex product configurability challenge.</p>
-          </li>
-          <li>
-            <strong>4. Full-Cycle Implementation</strong>
-            <p class="description">Currently leading the V2 development, from back-end pipeline configuration and CI/CD automation to the front-end CMS user experience design.</p>
-          </li>
-        </ol>
-      </section>
-
-      <section>
-        <h2 class="section-header">solution architecture</h2>
+        <h2 class="section-header">technical solution</h2>
         <ul class="project-list">
           <li>
-            <strong>Modular Content Model</strong>
-            <p class="description">A version-controlled library of reusable "Lego block" components, assembled via a "Docs-as-BOM" YAML file that ensures as-built accuracy and links content directly to P&ID revisions for traceability.</p>
+            <strong>Architecture & Backend Development</strong>
+            <p class="description">Architected a complete Django application using the Wagtail CMS. Built 15+ database models, a custom snippet system for reusable content, and a flexible service layer architecture with 34 custom StreamField blocks for modular content.</p>
           </li>
           <li>
-            <strong>Visual Assembly Workbench</strong>
-            <p class="description">A custom-configured CMS (Decap) providing an intuitive, "Word-like" single-pane experience for non-technical engineers to visually search, select, and assemble manual components.</p>
+            <strong>PDF Generation Pipeline</strong>
+            <p class="description">Integrated WeasyPrint to create an automated PDF generation pipeline. The system includes custom styling, automatic figure numbering, alphabetical index generation, and dynamic headers/footers based on document metadata.</p>
           </li>
-           <li>
-            <strong>Automated Publishing Pipelines</strong>
-            <p class="description">A CI/CD system built with Python and GitHub Actions that automatically generates both professional, print-ready PDFs (via LaTeX) and modern static websites (via MkDocs) from a single source of truth.</p>
+          <li>
+            <strong>Testing & Quality Assurance</strong>
+            <p class="description">Authored 114 automated tests using pytest to ensure system reliability, achieving 42% code coverage with a sub-3-second execution time. Configured Ruff for code linting and pre-commit hooks to maintain code quality.</p>
+          </li>
+          <li>
+            <strong>Production Deployment</strong>
+            <p class="description">Successfully deployed the platform to a Windows Server environment. This included configuring an IIS web server, integrating with an SQL Server database, and building an automated rsync deployment pipeline with safety checks.</p>
           </li>
         </ul>
       </section>
 
       <section>
-        <h2 class="section-header">deliverables</h2>
+        <h2 class="section-header">technical stack</h2>
         <table class="deliverables-table">
           <tbody>
             <tr>
               <td class="deliverable-title">
-                Scalable Content Platform
+                Backend
               </td>
               <td class="deliverable-description">
-                A version-controlled system for managing a library of modular content components across all standard and special product lines.
+                Python 3.11, Django 5.2, Wagtail 7.1 CMS
               </td>
             </tr>
             <tr>
               <td class="deliverable-title">
-                Visual Assembly Workbench
+                Database
               </td>
               <td class="deliverable-description">
-                A CMS interface configured to enable non-technical users to assemble manuals via a "Word-like" visual experience, eliminating the need for developer intervention.
+                SQL Server with Django ORM, 15+ models
               </td>
             </tr>
             <tr>
               <td class="deliverable-title">
-                Automated Publishing Pipelines
+                Frontend
               </td>
               <td class="deliverable-description">
-                Dual CI/CD pipelines that generate professional print (PDF) and web outputs from a single, structured source, with integrated quality gates.
+                Wagtail StreamField custom blocks (34 types), custom admin interface & templates
+              </td>
+            </tr>
+             <tr>
+              <td class="deliverable-title">
+                Testing
+              </td>
+              <td class="deliverable-description">
+                pytest (114 tests), Ruff linting, pre-commit hooks
+              </td>
+            </tr>
+            <tr>
+              <td class="deliverable-title">
+                Deployment
+              </td>
+              <td class="deliverable-description">
+                Windows Server, IIS, automated rsync pipeline, WeasyPrint PDF generation
               </td>
             </tr>
           </tbody>
