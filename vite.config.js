@@ -11,7 +11,6 @@ export default defineConfig({
       input: {
         main: 'index.html',
         pekos: 'pekos-case-study.html',
-        qa: 'qa-framework.html',
         sop: 'sop-case-study.html'
       },
       output: {

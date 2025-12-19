@@ -1,71 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deimonas Suchanka - Systems & Process Engineer</title>
+  <title>Deimonas Suchanka - Technical Systems Engineer</title>
   <link rel="stylesheet" href="/src/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" href="/portfolio/favicon-32x32.png">
 </head>
+
 <body>
 
   <div class="dossier-container">
 
     <header class="main-header">
-      <div class="header-grid">
-        
-        <!-- CONTAINER 1: BUST IMAGE -->
-        <div class="bust-container">
-          <img src="/src/assets/images/cicero.png" alt="Cicero bust - representing systematic argumentation and clarity of thought" class="cicero-bust">
-        </div> <!-- <<< THIS DIV WAS MISSING ITS CLOSING TAG HERE -->
-        
-        <!-- CONTAINER 2: TEXT CONTENT -->
-        <div class="text-container">
-          <h1 class="portfolio-name">Damon Suchanka</h1>
-          <h2 class="portfolio-title-location">Systems & Process Engineer | The Hague, Netherlands</h2>
-          <p class="intro-text">
-          I am a systems thinker who bridges the gap between hands-on execution and high-level analysis. I apply first-principles reasoning to diagnose complex systems, architect scalable processes, and deliver robust, data-driven engineering solutions.
-          </p>
-        </div>
-
-      </div> <!-- <<< THE EXTRA </div> WAS HERE, INCORRECTLY WRAPPING THE TEXT CONTAINER -->
+      <div class="header-text-only">
+        <h1 class="portfolio-name">Deimonas Suchanka</h1>
+        <h2 class="portfolio-title-location">Technical Systems Engineer | The Hague, Netherlands</h2>
+        <p class="intro-text">
+          Engineer with hands-on experience in systematic testing, calibration, and root cause analysis of complex
+          electromechanical systems. Background includes high-pressure hydraulic systems (1000 bar) and P&ID verification.
+          Ex-NATO military—comfortable with shift work and high-pressure environments.
+        </p>
+      </div>
     </header>
 
     <main>
       <section class="projects-section">
         <h2 class="section-header">key projects & case studies</h2>
         <ul class="project-list">
-          
+
           <li class="project-card">
             <a href="pekos-case-study.html" class="project-title-link" target="_blank" rel="noopener noreferrer">
               <h3 class="project-title">Root Cause Analysis: Pekos Clamping System</h3>
             </a>
             <div class="outcome-highlight">+350% FORCE CONSISTENCY | PRODUCTION FAILURE ELIMINATED</div>
             <p class="project-description">
-              Independently executed the workshop's first data-driven analysis to diagnose a fundamental control system instability. Architected and deployed the validated solution that eliminated a critical production failure.
-            </p>
-          </li>
-
-          <li class="project-card">
-            <a href="qa-framework.html" class="project-title-link" target="_blank" rel="noopener noreferrer">
-              <h3 class="project-title">Architecture: Tiered QA Validation Framework</h3>
-            </a>
-            <div class="outcome-highlight">ISO 9001 PRINCIPLES | KNOWLEDGE CAPTURE BLUEPRINT</div>
-            <p class="project-description">
-              Following a successful system diagnosis, was tasked by senior management to architect a new validation framework. Delivered a comprehensive blueprint and a lean test procedure (VTP) to formalize knowledge capture, provide objective QA evidence, and align processes with ISO 9001 standards.
+              Used VFD data logging and load cell measurements to capture torque/speed profiles and diagnose control
+              system instability. Identified root cause, validated solution with custom metrics, and eliminated
+              recurring production failure.
             </p>
           </li>
 
           <li class="project-card">
             <a href="sop-case-study.html" class="project-title-link" target="_blank" rel="noopener noreferrer">
-              <h3 class="project-title">Platform: Project Unidoc - Enterprise Documentation System</h3>
+              <h3 class="project-title">Process Improvement: Documentation System</h3>
             </a>
-            <div class="outcome-highlight">SCALABLE PLATFORM | CMS-DRIVEN | AUTOMATED ASSEMBLY</div>
+            <div class="outcome-highlight">SOLO-DEVELOPED | PRODUCTION DEPLOYED | BOTTLENECK ELIMINATED</div>
             <p class="project-description">
-              Architected a scalable, CMS-driven documentation platform to solve the complex challenge of producing as-built manuals for highly configurable equipment. The system empowers non-technical users and aligns with strategic business goals for modularity and ISO 9001 compliance.
+              Identified documentation bottleneck causing production delays. Proposed solution to leadership, then
+              built and deployed internal system for automated technical manual generation.
             </p>
           </li>
 
@@ -75,10 +64,13 @@
       <section class="competencies-section">
         <h2 class="section-header">core competencies</h2>
         <ul class="skills-list">
-          <li><strong>Data-Driven Analysis:</strong> Root Cause Analysis (RCA), Control Systems (Gain Margin), Materials Validation, Python (Seaborn/Matplotlib).</li>
-          <li><strong>Process & Quality Architecture:</strong> Tiered Validation Frameworks (L1-L3), ISO 9001 Principles, Standard Operating Procedure (SOP) Creation.</li>
-          <li><strong>Documentation Platform Architecture:</strong> CMS-driven Workflows (Decap CMS), Component Content Strategy (Docs-as-BOM), Automated Publishing (Python, Pandoc), P&ID Traceability.</li>
-          <li><strong>Automation & Control Systems:</strong> VFD/PLC Diagnosis (Invertek Optidrive), Parameter Tuning, Data Logging & Interpretation.</li>
+          <li><strong>Testing & Calibration:</strong> High-pressure hydraulics (1000 bar), Sensor instrumentation, PID
+            tuning, System calibration, Performance validation.</li>
+          <li><strong>Troubleshooting:</strong> Root Cause Analysis (RCA), P&ID/Schematic verification, Data-driven
+            diagnostics, VFD/PLC diagnosis.</li>
+          <li><strong>Operational:</strong> Night/shift work capability, ISO 9001 compliance, Technical writing, Process
+            improvement.</li>
+          <li><strong>Tools:</strong> Python (data analysis), Django/Wagtail, Windows Server/IIS deployment.</li>
         </ul>
       </section>
 
@@ -97,4 +89,5 @@
 
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>

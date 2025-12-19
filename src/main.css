@@ -23,7 +23,9 @@
   --font-sans: 'IBM Plex Sans', sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -53,51 +55,17 @@ body {
   margin-bottom: var(--space-32);
 }
 
-.header-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-32);
-  align-items: center;
-}
-
-.cicero-bust {
-  cursor: pointer;
-  display: block;
-  width: 144px;
-  height: auto;
-  margin: 0 auto;
-  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
-}
-
-.cicero-bust:hover {
-  transform: scale(1.02);
-  filter:
-    drop-shadow(0 0 8px rgba(212, 175, 55, 0.25))
-    drop-shadow(0 0 20px rgba(212, 175, 55, 0.15));
+.header-text-only {
+  text-align: left;
 }
 
 .intro-text {
   font-size: 1.1rem;
   line-height: 1.7;
-  text-align: center;
+  text-align: left;
   max-width: 65ch;
-  margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-  .header-grid {
-    grid-template-columns: 3fr 7fr;
-    gap: var(--space-64);
-  }
-  .cicero-bust {
-    width: 72%;
-    max-width: 202px;
-    margin: 0;
-  }
-  .intro-text {
-    text-align: left;
-    margin: 0;
-  }
+  margin: 0;
+  color: var(--description-text);
 }
 
 /* =====================================
@@ -254,7 +222,7 @@ body {
    CASE STUDY PAGE STYLES
    ===================================== */
 
-.dossier-container > main > section:not(:last-child) {
+.dossier-container>main>section:not(:last-child) {
   margin-bottom: var(--space-64);
 }
 
@@ -367,7 +335,7 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0 0 var(--space-8) 0;
-  text-align: center;
+  text-align: left;
 }
 
 .portfolio-title-location {
@@ -375,14 +343,7 @@ body {
   font-size: 1.1rem;
   font-weight: 400;
   margin: 0 0 var(--space-24) 0;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .portfolio-name,
-  .portfolio-title-location {
-    text-align: left;
-  }
+  text-align: left;
 }
 
 .text-sm {
@@ -410,9 +371,12 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.7;
   }

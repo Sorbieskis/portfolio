@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Root Cause Analysis: Pekos Clamping System - Damon Suchanka</title>
-  <meta name="description" content="Systematic analysis and solution for clamping system instability, resulting in a 350% improvement in force consistency.">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  
+  <title>Root Cause Analysis: Pekos Clamping System - Deimonas Suchanka</title>
+  <meta name="description"
+    content="Systematic analysis and solution for clamping system instability, resulting in a 350% improvement in force consistency.">
+  <link rel="icon" type="image/png" href="/portfolio/favicon-32x32.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="/src/main.css">
 </head>
+
 <body>
   <div class="dossier-container">
 
@@ -20,13 +25,14 @@
       <div class="case-study-header">
         <h1 class="case-study-title">Root Cause Analysis: Pekos Clamping System</h1>
         <h2 class="case-study-subtitle">Systems Engineer | Deimonas Suchanka</h2>
-        
+
         <div class="outcome-assertion">
           <p class="outcome-stat">
             <strong class="text-gold">+350% improvement</strong> in force consistency
           </p>
           <p class="outcome-summary">
-            Systematic analysis of production-critical clamping system instability. Root cause identified and validated solution implemented across three identical stations.
+            Systematic analysis of production-critical clamping system instability. Root cause identified and validated
+            solution implemented across three identical stations.
           </p>
         </div>
       </div>
@@ -36,7 +42,9 @@
       <section>
         <h2 class="section-header">the problem</h2>
         <p class="project-description">
-          A production-critical clamping system exhibited severe performance inconsistencies across three identical stations. While Station 1 was stable, Stations 2 and 3 showed extreme force variations (up to 11.4 kN), threatening quality assurance and causing significant production delays.
+          A production-critical clamping system exhibited severe performance inconsistencies across three identical
+          stations. While Station 1 was stable, Stations 2 and 3 showed extreme force variations (up to 11.4 kN),
+          threatening quality assurance and causing significant production delays.
         </p>
       </section>
 
@@ -47,19 +55,23 @@
         <ol class="project-list">
           <li>
             <strong>1. Data Acquisition</strong>
-            <p class="description">Executed an iterative, data-driven analysis—a first for the workshop environment—to capture torque and speed profiles during operation.</p>
+            <p class="description">Executed an iterative, data-driven analysis—a first for the workshop environment—to
+              capture torque and speed profiles during operation.</p>
           </li>
           <li>
             <strong>2. Comparative Analysis</strong>
-            <p class="description">Systematically compared mechanical resistance and force application across all three stations, isolating key differences in their physical characteristics.</p>
+            <p class="description">Systematically compared mechanical resistance and force application across all three
+              stations, isolating key differences in their physical characteristics.</p>
           </li>
           <li>
             <strong>3. Control System Modeling</strong>
-            <p class="description">Identified that the core issue was not simple programming but a fundamental control system problem: insufficient gain margin.</p>
+            <p class="description">Identified that the core issue was not simple programming but a fundamental control
+              system problem: insufficient gain margin.</p>
           </li>
           <li>
             <strong>4. Solution Validation</strong>
-            <p class="description">Developed and tested a new control scheme and operational parameters, validating the solution with a custom-developed Consistency Index (CI) metric.</p>
+            <p class="description">Developed and tested a new control scheme and operational parameters, validating the
+              solution with a custom-developed Consistency Index (CI) metric.</p>
           </li>
         </ol>
       </section>
@@ -69,15 +81,21 @@
         <ul class="project-list">
           <li>
             <strong>Root Cause:</strong></p>
-            <p class="description">An historical "overpower" motor upgrade, standardized for a new machine design, created a system with excessive gain and insufficient damping. This eliminated the detection margin between movement-start torque and clamping torque (\( T_{start} \approx T_{clamp} \)).</p>
+            <p class="description">An historical "overpower" motor upgrade, standardized for a new machine design,
+              created a system with excessive gain and insufficient damping. This eliminated the detection margin
+              between movement-start torque and clamping torque (\( T_{start} \approx T_{clamp} \)).</p>
           </li>
           <li>
-            <strong>Contributing Factors:</strong> 
-            <p class="description">Station 1's higher inherent mechanical resistance provided a "fortuitous" natural damping effect that kept it stable, while the more optimized, lower-resistance Stations 2 and 3 were highly unstable.</p>
+            <strong>Contributing Factors:</strong>
+            <p class="description">Station 1's higher inherent mechanical resistance provided a "fortuitous" natural
+              damping effect that kept it stable, while the more optimized, lower-resistance Stations 2 and 3 were
+              highly unstable.</p>
           </li>
           <li>
-            <strong>System Behavior:</strong> 
-            <p class="description">Discovered a non-intuitive "bi-modal stability" pattern. The system was only stable at very low forces (1.1-1.3 tonnes) or high forces (3-4 tonnes), with a highly unstable transition zone in between.</p>
+            <strong>System Behavior:</strong>
+            <p class="description">Discovered a non-intuitive "bi-modal stability" pattern. The system was only stable
+              at very low forces (1.1-1.3 tonnes) or high forces (3-4 tonnes), with a highly unstable transition zone in
+              between.</p>
           </li>
         </ul>
       </section>
@@ -85,9 +103,12 @@
       <section class="mb-16">
         <div class="graph-container">
           <figure>
-            <img src="src/assets/images/clamping_force_comparison_double_column_v5_hatch.png" alt="A graph showing clamping force vs. motor torque, demonstrating the bi-modal stability pattern.">
+            <img src="src/assets/images/clamping_force_comparison_double_column_v5_hatch.png"
+              alt="A graph showing clamping force vs. motor torque, demonstrating the bi-modal stability pattern.">
             <figcaption class="graph-caption">
-              <strong>Fig. 1:</strong> Clamping Force vs. Motor Torque Scaling. The graph clearly shows the unstable transition zone for Stations 2 & 3, while Station 1 remains stable due to its higher mechanical resistance, proving the bi-modal stability hypothesis.
+              <strong>Fig. 1:</strong> Clamping Force vs. Motor Torque Scaling. The graph clearly shows the unstable
+              transition zone for Stations 2 & 3, while Station 1 remains stable due to its higher mechanical
+              resistance, proving the bi-modal stability hypothesis.
             </figcaption>
           </figure>
         </div>
@@ -96,28 +117,36 @@
       <section>
         <h2 class="section-header">pragmatic solution engineering</h2>
         <p class="mb-4 text-description">
-          The solution was engineered to be effective within existing hardware and software limitations (e.g., paywalled VFD features), focusing on parameter tuning rather than a costly redesign.
+          The solution was engineered to be effective within existing hardware and software limitations (e.g., paywalled
+          VFD features), focusing on parameter tuning rather than a costly redesign.
         </p>
         <ul class="project-list">
           <li>
             <strong>Control System Redesign:</strong>
-            <span class="description">Implemented a three-button system to separate positioning from the dedicated clamping operation.</span>
+            <span class="description">Implemented a three-button system to separate positioning from the dedicated
+              clamping operation.</span>
           </li>
           <li>
             <strong>Station-Specific Parameter Tuning:</strong>
-            <span class="description">Instead of a complex gain schedule, I performed a targeted, data-driven tuning of three key VFD parameters for each station individually, compensating for their unique mechanical resistances.</span>
+            <span class="description">Instead of a complex gain schedule, I performed a targeted, data-driven tuning of
+              three key VFD parameters for each station individually, compensating for their unique mechanical
+              resistances.</span>
           </li>
           <li>
             <strong>PLC & Inverter Adjustments:</strong>
-            <span class="description">Implemented a 1s PLC delay to ignore the initial torque spike and reconfigured the inverter to "ramp to stop" for smoother, controlled deceleration.</span>
+            <span class="description">Implemented a 1s PLC delay to ignore the initial torque spike and reconfigured the
+              inverter to "ramp to stop" for smoother, controlled deceleration.</span>
           </li>
         </ul>
       </section>
 
       <section class="mb-16">
-        <h2 class="section-header">long-term validation & impact</h2>
+        <h2 class="section-header">long-term validation</h2>
         <p>
-          The enduring value of this analysis was validated months after deployment when the original issue reappeared. Because I had anticipated the system's long-term sensitivity, I diagnosed the problem remotely and guided a permanent fix within minutes via a minor (1%) parameter adjustment. This event served as definitive, real-world proof of the original root cause analysis.
+          Months after deployment, the original instability reappeared. Because I understood the underlying system
+          behavior — not just the symptoms — I diagnosed the problem remotely via phone and guided an on-site technician
+          through a permanent fix: a 0.5% parameter adjustment. The issue has not returned. This event served as
+          definitive proof of the original root cause analysis.
         </p>
       </section>
 
@@ -130,7 +159,8 @@
                 Engineering Analysis Report
               </td>
               <td class="deliverable-description">
-                An 11-page, IEEE-formatted technical report detailing the full root cause analysis, methodology, data visualization, and validated results.
+                An 11-page, IEEE-formatted technical report detailing the full root cause analysis, methodology, data
+                visualization, and validated results.
               </td>
             </tr>
             <tr>
@@ -138,22 +168,25 @@
                 QA Validation Framework
               </td>
               <td class="deliverable-description">
-                A strategic proposal and lean SOP (Standard Operating Procedure) designed to formalize knowledge capture and provide objective QA evidence.
+                A strategic proposal and lean SOP (Standard Operating Procedure) designed to formalize knowledge capture
+                and provide objective QA evidence.
               </td>
             </tr>
             <tr>
-  <td class="deliverable-title">
-    VFD Parameter Set
-  </td>
-  <td class="deliverable-description">
-    A finalized master list of station-specific inverter parameters, detailing the precise values for torque detection, deceleration, and force scaling required to achieve stable operation.
-  </td>
-</tr>
+              <td class="deliverable-title">
+                VFD Parameter Set
+              </td>
+              <td class="deliverable-description">
+                A finalized master list of station-specific inverter parameters, detailing the precise values for torque
+                detection, deceleration, and force scaling required to achieve stable operation.
+              </td>
+            </tr>
           </tbody>
         </table>
 
         <p class="text-sm text-description mt-8">
-          *Note: These documents contain proprietary information and are available to be discussed in detail during an interview.
+          *Note: These documents contain proprietary information and are available to be discussed in detail during an
+          interview.
         </p>
       </section>
     </main>
@@ -168,4 +201,5 @@
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </html>

@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Platform: Project Unidoc - Damon Suchanka</title>
-  <meta name="description" content="Case study on the architecture of Project Unidoc, an enterprise documentation platform built with Django and Wagtail for generating as-built technical manuals.">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  
+  <title>Process Improvement: Documentation System - Deimonas Suchanka</title>
+  <meta name="description"
+    content="Case study: Identified documentation bottleneck and built internal system for automated technical manual generation.">
+  <link rel="icon" type="image/png" href="/portfolio/favicon-32x32.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="/src/main.css">
 </head>
+
 <body>
   <div class="dossier-container">
 
     <header class="main-header">
       <div class="case-study-header">
-        <h1 class="case-study-title">Platform: Project Unidoc - Enterprise Documentation Platform</h1>
-        <h2 class="case-study-subtitle">Systems Engineer | Deimonas Suchanka</h2>
-        
+        <h1 class="case-study-title">Process Improvement: Documentation System</h1>
+        <h2 class="case-study-subtitle">Technical Systems Engineer | Deimonas Suchanka</h2>
+
         <div class="outcome-assertion">
           <p class="outcome-stat">
-            <strong class="text-gold">Production-Deployed Django/Wagtail CMS Platform</strong>
+            <strong class="text-gold">Solo-Developed | Production Deployed | Bottleneck Eliminated</strong>
           </p>
           <p class="outcome-summary">
-            Identified a critical business bottleneck, proposed a solution to leadership, and independently architected and delivered a complete system now in production.
+            Identified documentation bottleneck causing production delays. Proposed solution to leadership,
+            then independently built and deployed the system now running in production.
           </p>
         </div>
       </div>
@@ -36,84 +42,65 @@
       <section>
         <h2 class="section-header">the problem</h2>
         <p class="project-description">
-          The company's strategic shift toward highly configurable products created a documentation scalability crisis. The existing ad-hoc process, based on scattered Word files, was a high-risk liability.
+          The company builds highly configurable test equipment — each machine ships with an as-built manual reflecting
+          its specific configuration. The existing process relied on scattered Word files, manual copy-paste, and tribal
+          knowledge.
         </p>
         <p class="project-description">
-          This process could not support structured technical documentation requirements, which impacted delivery schedules and created a significant operational risk.
+          This created delivery delays, version control errors, and formatting inconsistencies. With the business
+          shifting toward more modular products, the manual process could not scale.
         </p>
       </section>
 
       <section>
-        <h2 class="section-header">technical solution</h2>
+        <h2 class="section-header">the solution</h2>
         <ul class="project-list">
           <li>
-            <strong>Architecture & Backend Development</strong>
-            <p class="description">Architected a complete Django application using the Wagtail CMS. Built 15+ database models, a custom snippet system for reusable content, and a flexible service layer architecture with 34 custom StreamField blocks for modular content.</p>
+            <strong>Modular Content System</strong>
+            <p class="description">Built a system where non-technical users can assemble manuals from reusable
+              components—safety warnings, procedures, specifications—without touching code or formatting.</p>
           </li>
           <li>
-            <strong>PDF Generation Pipeline</strong>
-            <p class="description">Integrated WeasyPrint to create an automated PDF generation pipeline. The system includes custom styling, automatic figure numbering, alphabetical index generation, and dynamic headers/footers based on document metadata.</p>
+            <strong>Automated PDF Generation</strong>
+            <p class="description">One-click PDF export with automatic figure numbering, table of contents,
+              alphabetical index, and consistent formatting. Eliminates manual formatting errors entirely.</p>
           </li>
           <li>
-            <strong>Testing & Quality Assurance</strong>
-            <p class="description">Authored 114 automated tests using pytest to ensure system reliability, achieving 42% code coverage with a sub-3-second execution time. Configured Ruff for code linting and pre-commit hooks to maintain code quality.</p>
+            <strong>Multi-Language Support</strong>
+            <p class="description">LLM-powered translation for rapid, affordable localization of technical manuals
+              without manual translation overhead.</p>
           </li>
           <li>
             <strong>Production Deployment</strong>
-            <p class="description">Successfully deployed the platform to a Windows Server environment. This included configuring an IIS web server, integrating with an SQL Server database, and building an automated rsync deployment pipeline with safety checks.</p>
+            <p class="description">Deployed to company infrastructure with automated deployment pipeline.
+              System has been running in production since December 2024.</p>
           </li>
         </ul>
       </section>
 
       <section>
-        <h2 class="section-header">technical stack</h2>
-        <table class="deliverables-table">
-          <tbody>
-            <tr>
-              <td class="deliverable-title">
-                Backend
-              </td>
-              <td class="deliverable-description">
-                Python 3.11, Django 5.2, Wagtail 7.1 CMS
-              </td>
-            </tr>
-            <tr>
-              <td class="deliverable-title">
-                Database
-              </td>
-              <td class="deliverable-description">
-                SQL Server with Django ORM, 15+ models
-              </td>
-            </tr>
-            <tr>
-              <td class="deliverable-title">
-                Frontend
-              </td>
-              <td class="deliverable-description">
-                Wagtail StreamField custom blocks (34 types), custom admin interface & templates
-              </td>
-            </tr>
-             <tr>
-              <td class="deliverable-title">
-                Testing
-              </td>
-              <td class="deliverable-description">
-                pytest (114 tests), Ruff linting, pre-commit hooks
-              </td>
-            </tr>
-            <tr>
-              <td class="deliverable-title">
-                Deployment
-              </td>
-              <td class="deliverable-description">
-                Windows Server, IIS, automated rsync pipeline, WeasyPrint PDF generation
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <h2 class="section-header">scope & implementation</h2>
+        <ul class="project-list">
+          <li>
+            <strong>Full Development Cycle</strong>
+            <p class="description">Requirements gathering, architecture design, implementation, testing,
+              deployment, and ongoing maintenance—all handled independently.</p>
+          </li>
+          <li>
+            <strong>Pit of Success Design</strong>
+            <p class="description">Primary users are engineers with no web development background.
+              Interface designed so the easiest path is the correct path—minimal training, error-proof operation.</p>
+          </li>
+          <li>
+            <strong>Production Scale</strong>
+            <p class="description">~4,500 lines of Python. Modular architecture supporting multiple manual
+              types and equipment configurations.</p>
+          </li>
+        </ul>
 
         <p class="text-sm text-description mt-8">
-          *Note: The system architecture and proprietary details are available to be discussed in depth during an interview.
+          This system forms the documentation layer of a broader workshop digitalization initiative.
+          Built with Python/Django. Technical architecture and source code available for discussion during interview.
         </p>
       </section>
     </main>
@@ -127,4 +114,5 @@
 
   </div>
 </body>
+
 </html>
